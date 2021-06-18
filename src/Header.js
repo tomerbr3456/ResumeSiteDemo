@@ -1,5 +1,4 @@
 import background from './images/SimpleShiny.svg'
-import hacking2 from './images/hacking2.png'
 import AppbBar from './AppBar'
 import { createUseStyles } from 'react-jss'
 import { useEffect, useState } from 'react'
@@ -8,26 +7,16 @@ import HeaderContent from './HeaderContent'
 const useStyles = createUseStyles({
   img: {
     backgroundImage: `url(${background})`,
-    backgroundSize: '120%',
+    position:'relative',
+    backgroundSize: 'cover',
     background: 'no-repeat',
-    width: 1536,
-    height: 800,
-    display:'flex'
-    // position: 'relative',
-  },
-  hackingImg: {
-    position: 'absolute',
-    backgroundImage: `url(${hacking2})`,
-    backgroundSize: '100%',
-    background: 'no-repeat',
-    width: 400,
-    height: 400,
-    right:150,
-    '&:hover':{
-      transform:'scale(1.1)',
-      transition:'transform .3s ease-out'
+    width: '100vw',
+    height: '800px',
+    display:'flex',
+    '@media (max-width: 600px)':{
+      flexDirection:'column'
     }
-  }
+  },
 })
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -36,8 +25,6 @@ function Header() {
   }, [])
 
   const handleScroll = (event) => {
-    // let scrollTop = event.srcElement.body.scrollTop
-    console.log('height:', window.scrollY)
     if (window.scrollY > 10)
       setIsScrolled(true)
     else
@@ -49,7 +36,8 @@ function Header() {
     <div>
       <div className={classes.img} >
         <HeaderContent/>
-        <div className={classes.hackingImg} />
+        {/* use react svg */}
+        {/* <div className={classes.hackingImg} /> */}
       </div>
       <AppbBar isScrolled={isScrolled} />
     </div>

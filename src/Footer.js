@@ -1,16 +1,20 @@
 import { createUseStyles } from 'react-jss'
 import reactLogo from './images/reactLogo.svg'
+import {skills} from './global'
 
 const useStyles = createUseStyles({
   root: {
-    width: 1536,
+    width: '100vw',
     height: 500,
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    color: 'black'
+    color: 'black',
+
+   
   },
   title: {
+    marginTop:50,
     height: '18%',
     fontSize: '3.5rem',
     fontWeight: 700,
@@ -48,7 +52,11 @@ const useStyles = createUseStyles({
     width:'40%',
     height: '7rem',
     justifyContent:'center',
-    flexWrap:'wrap'
+    flexWrap:'wrap',
+    '@media(max-width:600px)':{
+      width:'90%',
+      height: '10rem',
+    }
   },
   skill: {
     backgroundColor: '#1976d2',
@@ -56,6 +64,7 @@ const useStyles = createUseStyles({
     height: '1.5rem',
     marginRight:5,
     padding:'0.6rem',
+    paddingTop:10,
     lineHeight:'1.5',
     color: '#fff',
     borderRadius: '10px',
@@ -69,7 +78,6 @@ const useStyles = createUseStyles({
 })
 
 function Footer() {
-  const skills = ['HTML', 'CSS', 'React', 'NodeJs', 'Express', 'Graphql', 'Postgress', 'Git','Routing','Docker','Jss','TypeScript']
   const classes = useStyles()
   return (
     <div className={classes.root}>

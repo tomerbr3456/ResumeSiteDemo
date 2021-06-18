@@ -2,6 +2,8 @@ import './App.css';
 import Header from './Header';
 import Footer from './Footer';
 import Links from './Links';
+import Projects from './Projects';
+import AboutMe from './AboutMe';
 
 
 function App() {
@@ -10,6 +12,8 @@ function App() {
       <Header />
       <Footer/>
       <Links/>
+      <Projects/>
+      <AboutMe/>
     </div>
   );
 }
