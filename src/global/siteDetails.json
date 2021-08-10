@@ -1,0 +1,97 @@
+{
+  "firstName": "Tomer",
+  "lastName": "Braunstain",
+  "jobTitle": "Full Stack Developer",
+  "gitLink": "https://github.com/tomerbr3456",
+  "linkedin": "https://www.linkedin.com/in/tomer-braunstain/",
+  "yourPhoto": {},
+  "siteBackGroundImg": {},
+  "siteSvg": {},
+  "aboutMe": "Full stack developer, with 3 years of experience at Unit 8200 as RF technician. Autodidactic with excellent interpersonal relations and ability to work under high pressure. Highly motivated to be apart of a group and use my abilities as a programmer to improve the team.",
+  "resumeLink": "https://tomerbr3456.github.io/tomerWeb/",
+  "skills": [
+    {
+      "name": "HTML"
+    },
+    {
+      "name": "CSS"
+    },
+    {
+      "name": "JavaScript"
+    },
+    {
+      "name": "TypeScript"
+    },
+    {
+      "name": "Material-ui"
+    },
+    {
+      "name": "Formik"
+    },
+    {
+      "name": "React"
+    },
+    {
+      "name": "Express"
+    },
+    {
+      "name": "Graphql"
+    },
+    {
+      "name": "SQL"
+    },
+    {
+      "name": "MongoDb"
+    },
+    {
+      "name": "Postgres"
+    },
+    {
+      "name": "Nodejs"
+    },
+    {
+      "name": "Git"
+    },
+    {
+      "name": "Npm"
+    },
+    {
+      "name": "Docker"
+    }
+
+  ],
+  "projects": [
+    {
+      "name": "Fields",
+      "link": "https://fields.netlify.app/",
+      "description": "The application helps every amateur sportsman to manage and view the availability status of public sports fields nearby.",
+      "projectPic": {}
+    },
+    {
+      "name": "Make Your Resume Site",
+      "age": "",
+      "description": "Every junior developer can create his own styled resume website by filling very convenient form, after submitting the form, a zip is downloaded to your computer.",
+      "picture": "",
+      "link": "https://makeyourownsite.netlify.app/",
+      "projectPic": {}
+    },
+    {
+      "name": "Crawler",
+      "age": "",
+      "description": "",
+      "picture": "",
+      "link": "https://github.com/tomerbr3456/Crawler",
+      "projectPic": {}
+    },
+    {
+      "name": "Tasks Manager",
+      "age": "",
+      "description": "",
+      "picture": "",
+      "link": "https://github.com/tomerbr3456/tasks-manager",
+      "projectPic": {}
+    }
+  ],
+  "siteName": "Tomer Site",
+  "description": "If You Came Here Its A Sign That You Made The Right Choice"
+}
